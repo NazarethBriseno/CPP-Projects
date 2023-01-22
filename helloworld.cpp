@@ -1,4 +1,11 @@
 #include <iostream>
+
+ namespace first{
+     int x = 1;   
+    }
+namespace second{
+    int x = 2;
+}
 int main(){
     int yearBorn = 0;
     int currentYear = 2023;
@@ -22,5 +29,25 @@ int main(){
 
     //String
     std::string myName = "Nazareth Briseno";
+
+    //const
+    //Common naming convention for constants it to make all of the letters uppercase
+    const double PI = 3.14159;
+    const int LIGHT_SPEED = 299792458;
+
+   
+    //Namespaces- Different variable values with the same name
+    int x = 0;
+    std::cout << x;
+    //This will output 0
+    std::cout << first::x;
+    //This will output 1
+    std::cout << second::x;
+    //This will output 2
+
+
+
+
+
     return 0;
-}
+}//End of main
