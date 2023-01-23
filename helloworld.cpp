@@ -67,18 +67,26 @@ int main(){
 
 
         //cout << (insertion operator)
-        //cin >> (extraction operator)
-        std::string name;
-        std::cout << "Whats your name?\n";
-        std::cin >> name;
-        std::cout << "Your name is " << name << "!\n";
-        //The cin will only get the first word or text without a space, if you type "The city", only The will be saved
-        //If you want to get the whole line you'll use std::getline();
-        std::string fullName;
-        std::cout << "What's your full name?: ";
-        std::getline(std::cin, fullName);
-        std::cout << "Your full name is " << fullName << "!\n"; 
-        
+        // //cin >> (extraction operator)
+        // std::string name;
+        // std::cout << "What is your first name?: ";
+        // std::cin >> name;
+        // std::cout << "Your name is " << name << "!\n";
+        // // std::cin.ignore();
+        // //The cin will only get the first word or text without a space, if you type "The city", only The will be saved
+        // //If you want to get the whole line you'll use std::getline();
+        // std::string fullName; 
+        // std::cout << "What is your full name?: ";
+        // std::getline(std::cin >> std::ws, fullName);
+        // std::cout << "Your full name is " << fullName << "!";
 
-    return 0;
+        std::string favIceCream;
+        std::cout << "What's your favorite ice cream?: ";
+        std::cin >> favIceCream;
+        std::cout << "Your favorite ice cream is " << favIceCream << "!\n";
+
+        std::string twoFavSodas;
+        std::cout << "What are your two favorite sodas?: ";
+        std::getline(std::cin >> std::ws, twoFavSodas);
+        std::cout << "Your two favorite sodas are " << twoFavSodas << "!\n";
 }//End of main
